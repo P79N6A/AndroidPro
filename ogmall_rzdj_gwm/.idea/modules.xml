@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/infinitecycleviewpager/infinitecycleviewpager.iml" filepath="$PROJECT_DIR$/infinitecycleviewpager/infinitecycleviewpager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib-zxing/lib-zxing.iml" filepath="$PROJECT_DIR$/lib-zxing/lib-zxing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/netlibrary/netlibrary.iml" filepath="$PROJECT_DIR$/netlibrary/netlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ogmall_rzdj_gwm.iml" filepath="$PROJECT_DIR$/ogmall_rzdj_gwm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/publiclibrary/publiclibrary.iml" filepath="$PROJECT_DIR$/publiclibrary/publiclibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qdrawlibrary/qdrawlibrary.iml" filepath="$PROJECT_DIR$/qdrawlibrary/qdrawlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/unity-android-resources/unity-android-resources.iml" filepath="$PROJECT_DIR$/unity-android-resources/unity-android-resources.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xrecyclerview/xrecyclerview.iml" filepath="$PROJECT_DIR$/xrecyclerview/xrecyclerview.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:id="@+id/ll_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center|left"
+                    android:orientation="horizontal"
+                    app:layout_heightPercent="4.5%h"
+                    app:layout_marginBottomPercent="1%w"
+                    app:layout_marginLeftPercent="3%w"
+                    app:layout_marginTopPercent="1%w">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@color/color_333333"
+                        app:layout_heightPercent="60%h"
+                        app:layout_marginRightPercent="50%h"
+                        app:layout_widthPercent="14%h" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:orientation="horizontal"
+                        app:layout_marginLeftPercent="1.5%w"
+                        app:layout_marginRightPercent="1.5%w" />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_f0f0f0" />
+
+                <com.junshan.pub.widget.PagerSlidingTabStrip
+                    android:id="@+id/tabs_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="#f8f8f8"
+                    app:JessonTextColorOff="@color/color_787878"
+                    app:JessonTextColorOn="@color/color_E70052"
+                    app:layout_heightPercent="6%h"
+                    app:pstsDividerColor="@color/transparent"
+                    app:pstsIndicatorColor="@color/color_E70052"
+                    app:pstsIndicatorHeight="@dimen/d2"
+                    app:pstsShouldExpand="true"
+                    app:pstsUnderlineHeight="0dp" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:id="@+id/ll_empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:src="@mipmap/ic_no_data"
+                    app:layout_heightPercent="30%h" />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+        <!--  android:layout_height="?attr/actionBarSize"-->
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="?attr/colorPrimary"
+            style="@style/AppTheme.PopupOverlay">
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/backicon"/>
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="添加文字"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvRight"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:layout_alignParentRight="true"
+                android:paddingRight="21dp"
+                android:text="完成"
+                android:visibility="gone"
+                android:textSize="14dp"/>
+
+            <ImageView
+                android:id="@+id/ivRight"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:gravity="center_vertical|right"
+                android:layout_alignParentRight="true"
+                android:paddingRight="21dp"
+                android:scaleType="center"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/flytContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

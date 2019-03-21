@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/ll_search"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/shape_grap_search"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible">
+            <ImageView
+                android:layout_width="@dimen/d20"
+                android:layout_height="20dp"
+                android:layout_marginLeft="@dimen/d10"
+                android:src="@mipmap/ic_search" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="@dimen/d8"
+                android:layout_marginRight="8dp"
+                android:background="@color/color_dddddd" />
+            <com.junshan.pub.widget.ClearEditText
+                android:imeOptions="actionSearch"
+                android:id="@+id/et_search"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/d30"
+                android:layout_marginRight="@dimen/d10"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:hint="请输入品牌"
+                android:maxLength="20"
+                android:paddingLeft="@dimen/d5"
+                android:singleLine="true"
+                android:textColor="@color/color_333333"
+                android:textColorHint="@color/color_999999"
+                android:textSize="@dimen/d13" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_sp_sx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_red2"
+            android:textColor="@color/white"
+            android:paddingLeft="@dimen/d30"
+            android:paddingRight="@dimen/d30"
+            android:paddingTop="@dimen/d8"
+            android:layout_gravity="center_vertical"
+            android:paddingBottom="@dimen/d8"
+            android:layout_marginRight="@dimen/d30"
+            android:text="筛选"/>
+    </LinearLayout>
+</layout>

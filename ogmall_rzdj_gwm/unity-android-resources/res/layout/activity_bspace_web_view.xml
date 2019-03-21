@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/toolbarLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/web_custom_more_btn"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:contentDescription="@string/app_name"
+            android:elevation="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/web_close" />
+
+        <ImageButton
+            android:id="@+id/web_custom_back_image"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:contentDescription="@string/app_name"
+            android:elevation="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/web_cutsom_last" />
+
+        <ImageButton
+            android:id="@+id/web_custom_close_image"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/web_cutsom_next"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/web_custom_reload_image"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/web_cutsom_reload"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/web_custom_url"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.35"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/webUrlTest"
+            android:textColor="#faf8f8"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <ImageButton
+            android:id="@+id/web_custom_more_gap"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_close_v2"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_x="451dp"
+        android:layout_y="146dp"
+        android:background="#1E1E1E"
+        android:id="@+id/web_custom_progressBar"
+        android:layout_height="5dp"
+        tools:visibility="visible"/>
+
+    <WebView
+        android:id="@+id/CustomWebView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" >
+
+    </WebView>
+
+</LinearLayout>

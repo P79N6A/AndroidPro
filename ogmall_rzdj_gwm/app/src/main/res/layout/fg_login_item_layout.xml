@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.zhy.android.percent.support.PercentFrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_heightPercent="70%h"
+            app:layout_widthPercent="70%w">
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:focusableInTouchMode="true"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@mipmap/ic_login_left"
+                android:gravity="center|top"
+                android:orientation="vertical"
+                app:layout_widthPercent="40%w">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:src="@mipmap/ic_home_logo"
+                    app:layout_heightPercent="12%w"
+                    app:layout_marginTopPercent="15%h"
+                    app:layout_widthPercent="47%w" />
+
+                <ImageView
+                    android:id="@+id/hint1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_below="@+id/logo"
+                    android:src="@mipmap/ic_login_user"
+                    app:layout_heightPercent="6%w"
+                    app:layout_marginTopPercent="15%h"
+                    app:layout_widthPercent="6%w" />
+
+                <com.junshan.pub.widget.ClearEditText
+                    android:singleLine="true"
+                    android:id="@+id/et_user"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_below="@+id/logo"
+                    android:layout_toRightOf="@+id/hint1"
+                    android:background="@color/transparent"
+                    android:gravity="center|left"
+                    android:hint="@string/str_zh"
+                    android:maxLength="11"
+                    android:inputType="phone"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/color_333333"
+                    android:textColorHint="@color/color_999999"
+                    app:layout_heightPercent="10%w"
+                    app:layout_marginTopPercent="14%h"
+                    app:layout_textSizePercent="5.5%w"
+                    app:layout_widthPercent="50%w" />
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/et_user"
+                    android:layout_marginTop="@dimen/d3"
+                    android:background="@color/color_dddddd"
+                    app:layout_widthPercent="60%w" />
+
+                <ImageView
+                    android:id="@+id/hint2"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_below="@+id/divider"
+                    android:src="@mipmap/ic_login_passwd"
+                    app:layout_heightPercent="6%w"
+                    app:layout_marginTopPercent="8%h"
+                    app:layout_widthPercent="6%w" />
+
+                <com.junshan.pub.widget.ClearEditText
+                    android:singleLine="true"
+                    android:inputType="textPassword"
+                    android:id="@+id/et_passwd"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_below="@+id/divider"
+                    android:layout_toRightOf="@+id/hint1"
+                    android:background="@color/transparent"
+                    android:gravity="center|left"
+                    android:hint="@string/str_mm"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/color_333333"
+                    android:textColorHint="@color/color_999999"
+                    app:layout_heightPercent="10%w"
+                    app:layout_marginTopPercent="7%h"
+                    app:layout_textSizePercent="5.5%w"
+                    app:layout_widthPercent="50%w" />
+
+                <View
+                    android:id="@+id/divider2"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/et_passwd"
+                    android:layout_marginTop="@dimen/d3"
+                    android:background="@color/color_dddddd"
+                    app:layout_widthPercent="60%w" />
+
+                <TextView
+                    android:id="@+id/btn_login"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_below="@+id/divider2"
+                    android:background="@mipmap/ic_login"
+                    app:layout_heightPercent="20%w"
+                    app:layout_marginLeftPercent="3%w"
+                    app:layout_marginTopPercent="8%h"
+                    app:layout_widthPercent="50%w" />
+
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_login_right"
+                app:layout_marginBottomPercent="3%h"
+                app:layout_marginLeftPercent="38%w"
+                app:layout_marginTopPercent="3%h"
+                app:layout_widthPercent="62%w" />
+
+        </com.zhy.android.percent.support.PercentFrameLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</layout>

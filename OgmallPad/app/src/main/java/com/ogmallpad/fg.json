@@ -1,0 +1,17 @@
+{
+  "pakege": "com.ogmallpad",
+  "author": "chenjunshan",
+  "data": [
+    {
+      "path": "ui/fragment",
+      "menu": [
+        {
+          "isList": true,
+          "title": "我的设计师",
+          "name": "mydesign"
+        }
+      ]
+    }
+  ]
+}
+  

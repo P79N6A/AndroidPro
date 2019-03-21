@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.zhy.android.percent.support.PercentFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/ll_head_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="15dp"
+                app:layout_heightPercent="70%h">
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv1"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/ic_launcher"
+                        app:layout_heightPercent="77%h"
+                        app:layout_marginLeftPercent="5%w"
+
+                        app:layout_widthPercent="56%w" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        app:layout_heightPercent="80%h">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="0dp"
+                            app:cardElevation="@dimen/d5">
+
+                            <ImageView
+                                android:id="@+id/iv2"
+                                android:layout_width="120dp"
+                                android:layout_height="65dp"
+                                android:scaleType="centerCrop"
+                                android:src="@mipmap/ic_launcher" />
+                        </FrameLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="@dimen/d10"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/d10"
+                            android:paddingRight="@dimen/d10">
+                            <TextView
+                                android:id="@+id/tv_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:singleLine="true"
+                                android:textColor="#333333"
+                                android:textSize="14dp" />
+                            <TextView
+                                android:id="@+id/tv_details"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:layout_marginTop="10dp"
+                                android:lineSpacingExtra="3dp"
+                                android:maxLines="7"
+                                android:text="的的额度"
+                                android:textColor="#333333"
+                                android:textSize="12dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:visibility="gone"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/iv_left"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:padding="10dp"
+                                    android:src="@mipmap/ic_brand_arr_left" />
+
+                                <ImageView
+                                    android:id="@+id/iv_right"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:padding="10dp"
+                                    android:src="@mipmap/ic_brand_arr_right" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/tv_ztyz"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:background="@drawable/shape_bg1"
+                            android:gravity="center"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:text="@string/str_ztyz"
+                            android:textColor="@color/white"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/shape_bg3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_bg2"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="@string/str_fl2"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    android:textSize="14dp" />
+                <View
+                    android:layout_width="@dimen/d5"
+                    android:layout_height="match_parent"
+                    android:background="@color/black"
+                    android:layout_marginTop="@dimen/d4"
+                    android:layout_marginBottom="@dimen/d4"/>
+                <HorizontalScrollView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:id="@+id/ll_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/d30"/>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/ic_arrows_bottom2"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/str_gd"
+                    android:textColor="@color/color_ff0f01"
+                    android:textSize="14dp"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+    </com.zhy.android.percent.support.PercentFrameLayout>
+</layout>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_heightPercent="12%h">
+
+            <TextView
+                android:id="@+id/hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_tjkh"
+                android:textColor="@color/color_787878"
+                app:layout_marginBottomPercent="3%h"
+                app:layout_marginLeftPercent="5%w"
+                app:layout_marginTopPercent="3%h"
+                app:layout_textSizePercent="40%h" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:src="@mipmap/ic_close"
+                app:layout_heightPercent="40%h"
+                app:layout_marginRightPercent="5%w"
+                app:layout_widthPercent="40%h" />
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/hint"
+            android:background="@color/color_f0f0f0"
+            app:layout_marginBottomPercent="6%h" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center|left"
+            app:layout_heightPercent="13%h">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/str_xm"
+                android:textColor="@color/color_787878"
+                app:layout_marginLeftPercent="5%w"
+                app:layout_textSizePercent="25%h"
+                app:layout_widthPercent="20%w" />
+
+            <com.junshan.pub.widget.ClearEditText
+                android:singleLine="true"
+                android:maxLength="10"
+                android:id="@+id/et_name"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/shape_grap2"
+                android:gravity="center|left"
+                android:hint="@string/str_qsrxm"
+                android:paddingLeft="10dp"
+                android:textColor="@color/color_787878"
+                android:textColorHint="@color/color_999999"
+                app:layout_heightPercent="60%h"
+                app:layout_textSizePercent="25%h"
+                app:layout_widthPercent="40%w" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center|left"
+            app:layout_heightPercent="13%h">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/str_sjh"
+                android:textColor="@color/color_787878"
+                app:layout_marginLeftPercent="5%w"
+                app:layout_textSizePercent="25%h"
+                app:layout_widthPercent="20%w" />
+
+            <com.junshan.pub.widget.ClearEditText
+                android:inputType="number"
+                android:singleLine="true"
+                android:maxLength="11"
+                android:id="@+id/et_mobile"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/shape_grap2"
+                android:gravity="center|left"
+                android:hint="@string/str_qsrsjh"
+                android:paddingLeft="10dp"
+                android:textColor="@color/color_787878"
+                android:textColorHint="@color/color_999999"
+                app:layout_heightPercent="60%h"
+                app:layout_textSizePercent="25%h"
+                app:layout_widthPercent="40%w" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center|left"
+            app:layout_heightPercent="13%h">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/str_dz"
+                android:textColor="@color/color_787878"
+                app:layout_marginLeftPercent="5%w"
+                app:layout_textSizePercent="25%h"
+                app:layout_widthPercent="20%w" />
+
+            <TextView
+                android:id="@+id/tv_province"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/shape_grap2"
+                android:drawablePadding="@dimen/d5"
+                android:drawableRight="@mipmap/ic_arrows_bottom2"
+                android:gravity="center|left"
+                android:hint="@string/str_qxzs"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/color_787878"
+                android:textColorHint="@color/color_999999"
+                app:layout_heightPercent="60%h"
+                app:layout_textSizePercent="25%h" />
+
+            <TextView
+                android:id="@+id/tv_city"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/shape_grap2"
+                android:drawablePadding="@dimen/d5"
+                android:drawableRight="@mipmap/ic_arrows_bottom2"
+                android:gravity="center|left"
+                android:hint="@string/str_qxzs2"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/color_787878"
+                android:textColorHint="@color/color_999999"
+                app:layout_heightPercent="60%h"
+                app:layout_textSizePercent="25%h" />
+
+            <TextView
+                android:id="@+id/tv_county"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/shape_grap2"
+                android:drawablePadding="@dimen/d5"
+                android:drawableRight="@mipmap/ic_arrows_bottom2"
+                android:gravity="center|left"
+                android:hint="@string/str_qxzq"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/color_787878"
+                android:textColorHint="@color/color_999999"
+                app:layout_heightPercent="60%h"
+                app:layout_textSizePercent="25%h" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center|left"
+            app:layout_heightPercent="13%h">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/str_xm"
+                android:textColor="@color/color_787878"
+                android:visibility="invisible"
+                app:layout_marginLeftPercent="5%w"
+                app:layout_textSizePercent="25%h"
+                app:layout_widthPercent="20%w" />
+
+            <com.junshan.pub.widget.ClearEditText
+                android:singleLine="true"
+                android:maxLength="30"
+                android:id="@+id/et_address"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/shape_grap2"
+                android:gravity="center|left"
+                android:hint="@string/str_xxdz"
+                android:paddingLeft="10dp"
+                android:textColor="@color/color_787878"
+                android:textColorHint="@color/color_999999"
+                app:layout_heightPercent="60%h"
+                app:layout_textSizePercent="25%h"
+                app:layout_widthPercent="40%w" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center|left"
+            app:layout_heightPercent="13%h">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:src="@mipmap/ic_check_on"
+                app:layout_heightPercent="35%h"
+                app:layout_marginBottomPercent="3%h"
+                app:layout_marginLeftPercent="25%w"
+                app:layout_marginTopPercent="3%h"
+                app:layout_textSizePercent="25%h"
+                app:layout_widthPercent="35%h" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="right"
+                android:text="@string/str_wyyd"
+                android:textColor="@color/color_787878"
+                app:layout_textSizePercent="20%h" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="right"
+                android:text="@string/str_yhxy"
+                android:textColor="@color/color_E70052"
+                app:layout_textSizePercent="20%h" />
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center|right"
+            app:layout_heightPercent="13%h">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/shape_grap3"
+                android:text="@string/str_qx"
+                android:textColor="@color/white"
+                app:layout_heightPercent="50%h"
+                app:layout_textSizePercent="25%h"
+                app:layout_widthPercent="13%w" />
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/shape_red2"
+                android:text="@string/str_tj"
+                android:textColor="@color/white"
+                app:layout_heightPercent="50%h"
+                app:layout_marginLeftPercent="2%w"
+                app:layout_marginRightPercent="10%w"
+                app:layout_textSizePercent="25%h"
+                app:layout_widthPercent="13%w" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</layout>

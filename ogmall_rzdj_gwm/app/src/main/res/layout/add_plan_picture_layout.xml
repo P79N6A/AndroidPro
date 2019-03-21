@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.zhy.android.percent.support.PercentFrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_design"
+            app:layout_heightPercent="55%w"
+            app:layout_marginBottomPercent="11%w"
+            app:layout_marginTopPercent="4%w"
+            app:layout_widthPercent="90%w" />
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:paddingBottom="@dimen/d10"
+            android:paddingLeft="@dimen/d10"
+            android:src="@mipmap/ic_cancel" />
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_fmzp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="8dp"
+            android:gravity="center|left"
+            android:lineSpacingExtra="@dimen/d2"
+            android:text="图片大小必须在375×255px以上，大小不能超过1M,上限为8张"
+            android:textColor="@color/color_787878"
+            app:layout_marginBottomPercent="2%w"
+            app:layout_marginLeftPercent="5%w"
+            app:layout_marginRightPercent="5%w"
+            app:layout_textSizePercent="4%w" />
+    </com.zhy.android.percent.support.PercentFrameLayout>
+</layout>

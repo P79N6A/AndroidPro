@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_marginLeftPercent="10%w"
+            app:layout_marginRightPercent="10%w"
+            app:layout_marginTopPercent="4%w">
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/color_f4f4f4"
+                android:scaleType="centerCrop"
+                app:layout_heightPercent="42%w"
+                app:layout_widthPercent="48%w" />
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_marginLeftPercent="4%w"
+                app:layout_widthPercent="48%w">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="5dp"
+                    android:maxLines="2"
+                    android:text="美特好头等厢沙发 单人沙发 现代风格 科技布"
+                    android:textColor="@color/color_333333"
+                    android:textStyle="bold"
+                    app:layout_textSizePercent="7%w" />
+
+                <TextView
+                    android:id="@+id/tv_sub_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="5dp"
+                    android:maxLines="2"
+                    android:text="美特好头等厢沙发 单人沙发 现代风格 科技布"
+                    android:textColor="@color/color_777777"
+                    app:layout_marginBottomPercent="6%w"
+                    app:layout_marginTopPercent="2%w"
+                    app:layout_textSizePercent="4%w" />
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/str_ys"
+                        android:textColor="@color/color_787878"
+                        app:layout_textSizePercent="4%w" />
+
+                    <com.junshan.pub.widget.BaseGridView
+                        android:id="@+id/gv_color"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:numColumns="3" />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_marginTopPercent="6%w">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/str_gg"
+                        android:textColor="@color/color_787878"
+                        app:layout_textSizePercent="4%w" />
+
+                    <com.junshan.pub.widget.BaseGridView
+                        android:id="@+id/gv_size"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:numColumns="3" />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:orientation="horizontal"
+                    app:layout_marginTopPercent="9%w">
+
+                    <TextView
+                        android:id="@+id/tv_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="5dp"
+                        android:text="￥ 1388.88"
+                        android:textColor="@color/color_333333"
+                        android:textStyle="bold"
+                        app:layout_textSizePercent="7%w" />
+
+                    <TextView
+                        android:id="@+id/tv_original_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="5dp"
+                        android:text="1588.88"
+                        android:textColor="@color/color_787878"
+                        android:textStyle="bold"
+                        app:layout_marginLeftPercent="3%w"
+                        app:layout_textSizePercent="4%w" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/iv_share"
+                        android:layout_width="29dp"
+                        android:layout_height="29dp"
+                        android:background="@mipmap/ic_share"
+                        android:scaleType="centerCrop" />
+
+                    <CheckBox
+                        android:id="@+id/cb_collect"
+                        android:layout_width="29dp"
+                        android:layout_height="28dp"
+                        android:background="@drawable/selecter_collect"
+                        android:button="@null"
+                        android:clickable="false"
+                        android:focusable="false"
+                        app:layout_marginLeftPercent="5%w" />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_marginLeftPercent="3%w"
+            app:layout_marginRightPercent="3%w"
+            app:layout_marginTopPercent="5%w">
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/color_333333"
+                app:layout_heightPercent="2%w"
+                app:layout_marginTopPercent="0.4%w"
+                app:layout_widthPercent="0.4%w" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/view1"
+                android:ellipsize="end"
+                android:lineSpacingExtra="5dp"
+                android:maxLines="2"
+                android:text="@string/str_spxx"
+                android:textColor="@color/color_333333"
+                app:layout_textSizePercent="2%w" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/view1"
+                android:background="@color/color_f0f0f0"
+                app:layout_marginBottomPercent="2%w"
+                app:layout_marginTopPercent="1.2%w" />
+
+            <com.junshan.pub.widget.BaseGridView
+                android:id="@+id/gv_spxx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view2"
+                android:layout_marginLeft="65dp"
+                android:layout_marginRight="65dp"
+                android:numColumns="4"
+                app:layout_marginBottomPercent="5%w" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gv_spxx"
+                android:background="@color/color_333333"
+                app:layout_heightPercent="2%w"
+                app:layout_marginTopPercent="0.4%w"
+                app:layout_widthPercent="0.4%w" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gv_spxx"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/view1"
+                android:ellipsize="end"
+                android:lineSpacingExtra="5dp"
+                android:maxLines="2"
+                android:text="@string/str_spxq"
+                android:textColor="@color/color_333333"
+                app:layout_marginLeftPercent="2%w"
+                app:layout_textSizePercent="2%w" />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/view3"
+                android:background="@color/color_f0f0f0"
+                app:layout_marginBottomPercent="5%w"
+                app:layout_marginTopPercent="1.2%w" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</layout>

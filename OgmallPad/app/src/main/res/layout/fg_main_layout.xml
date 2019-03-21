@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/left_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_c73c3a"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/status_bar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/color_b3ffffff" />
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:id="@+id/ll_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/color_b3ffffff"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_heightPercent="8%h">
+
+                <ImageView
+                    android:id="@+id/iv_menu"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="@dimen/d13"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="@dimen/d13"
+                    android:src="@mipmap/ic_menu_red" />
+
+                <TextView
+                    android:id="@+id/tv_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_sy"
+                    android:textColor="@color/color_c73c3a"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/str_hint"
+                    android:textColor="@color/color_c73c3a"
+                    android:textSize="14dp"
+                    android:visibility="invisible" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/tv_logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/str_tcdqkf"
+                    android:textColor="@color/color_c73c3a"
+                    android:textSize="14dp"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/iv_logout"
+                    android:layout_width="17dp"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@mipmap/ic_arrows__right_red"
+                    android:visibility="invisible" />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <android.support.v4.app.FragmentTabHost
+                android:id="@+id/tabhost"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/white" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+        <!-- 左侧滑动栏 -->
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/ll_menu"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/white"
+            android:gravity="center|top"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="30dp"
+                android:padding="22dp"
+                android:src="@mipmap/ic_rzdj"
+                app:layout_heightPercent="14%h" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e1dede" />
+
+            <LinearLayout
+                android:id="@+id/ll_home"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center|left"
+                android:orientation="horizontal"
+                app:layout_heightPercent="16%h">
+
+                <RadioButton
+                    android:id="@+id/iv_menu_home"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/selector_bg3"
+                    android:button="@null"
+                    android:checked="true"
+                    android:clickable="false" />
+
+                <RadioButton
+                    android:id="@+id/tv_menu_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:button="@null"
+                    android:checked="true"
+                    android:clickable="false"
+                    android:text="@string/str_sy"
+                    android:textColor="@color/color_black_red"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_brand"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center|left"
+                android:orientation="horizontal"
+                app:layout_heightPercent="16%h">
+
+                <RadioButton
+                    android:id="@+id/iv_menu_brand"
+                    android:layout_width="31dp"
+                    android:layout_height="23dp"
+                    android:layout_marginLeft="56dp"
+                    android:layout_marginRight="@dimen/d6"
+                    android:background="@drawable/selector_bg4"
+                    android:button="@null"
+                    android:clickable="false" />
+
+                <RadioButton
+                    android:id="@+id/tv_menu_brand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:button="@null"
+                    android:clickable="false"
+                    android:text="@string/str_pp"
+                    android:textColor="@color/color_black_red"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_plan"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center|left"
+                android:orientation="horizontal"
+                app:layout_heightPercent="16%h">
+
+                <RadioButton
+                    android:id="@+id/iv_menu_plan"
+                    android:layout_width="25dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="59dp"
+                    android:layout_marginRight="@dimen/d7"
+                    android:background="@drawable/selector_bg5"
+                    android:button="@null"
+                    android:clickable="false" />
+
+                <RadioButton
+                    android:id="@+id/tv_menu_plan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:button="@null"
+                    android:clickable="false"
+                    android:text="@string/str_fa"
+                    android:textColor="@color/color_black_red"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_mine"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center|left"
+                android:orientation="horizontal"
+                app:layout_heightPercent="16%h">
+
+                <RadioButton
+                    android:id="@+id/iv_menu_mine"
+                    android:layout_width="27dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="58dp"
+                    android:layout_marginRight="@dimen/d6"
+                    android:background="@drawable/selector_bg6"
+                    android:button="@null"
+                    android:clickable="false" />
+
+                <RadioButton
+                    android:id="@+id/tv_menu_mine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:button="@null"
+                    android:clickable="false"
+                    android:text="@string/str_grzx"
+                    android:textColor="@color/color_black_red"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+</layout>

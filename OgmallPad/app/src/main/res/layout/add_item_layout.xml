@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:id="@+id/tv_name"
+        android:textColor="@color/color_666666"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="客厅家具"
+        android:textSize="@dimen/d12" />
+</layout>

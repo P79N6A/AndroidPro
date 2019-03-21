@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/color_f4f4f4"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/fl_plan_left"
+            android:name="com.ogmamllpadnew.ui.fragment.PlanLeftFragment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="25%w" />
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</layout>

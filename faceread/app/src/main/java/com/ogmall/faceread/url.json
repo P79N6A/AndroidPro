@@ -1,0 +1,11 @@
+{
+  "pakege": "com.shan.netlibrary",
+  "author": "chenjunshan",
+  "data": [
+    {
+      "type": "post",
+      "name": "上传图片",
+      "url": "face/images"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/d12"
+        android:layout_marginRight="@dimen/d12"
+        android:layout_marginLeft="@dimen/d12"
+        android:background="@drawable/shape_red3"
+        android:button="@null"
+        android:gravity="center"
+        android:paddingBottom="@dimen/d8"
+        android:paddingLeft="@dimen/d10"
+        android:paddingRight="@dimen/d10"
+        android:paddingTop="@dimen/d8"
+        android:singleLine="true"
+        android:text="qweq"
+        android:textColor="@color/color_red_black"
+        android:textSize="11dp" />
+</layout>

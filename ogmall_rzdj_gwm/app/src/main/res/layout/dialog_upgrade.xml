@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/ic_upgrade_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d16"
+            android:layout_marginRight="@dimen/d16"
+            android:layout_marginTop="@dimen/d16"
+            android:text="@string/str_fxxbb"
+            android:textColor="@color/color_333333"
+            android:textSize="16sp"
+            app:layout_marginTopPercent="40%h" />
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d21"
+            android:layout_marginRight="@dimen/d21"
+            android:layout_marginTop="@dimen/d10"
+            android:gravity="center|left|top"
+            android:lineSpacingExtra="@dimen/d5"
+            android:text="V 2.1.0"
+            android:textColor="@color/color_787878"
+            android:textSize="14sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d37"
+                    android:layout_marginRight="@dimen/d21"
+                    android:layout_marginTop="@dimen/d15"
+                    android:gravity="center|left|top"
+                    android:lineSpacingExtra="@dimen/d5"
+                    android:text="1、优化何时开始上开始1、优化何时开始上优化何时开始上开始1优化何时开始上开始1优化何时开始上开始1优化何时开始上开始1优化何时开始上开始1优化何时开始上开始1优化何时开始上开始1开始1、优化何时开始上开始1、优化何时开始上开始1、优化何时开始上开始1、优化何时开始上开始1、优化何时开始上开始1、优化何时开始上开始1、优化何时开始上开始1、优化何时开始上开始1、优化何时开始上开始1、优化何时开始上开始1、优化何时开始上开始1、优化何时开始上开始1、优化何时开始上开始1、优化何时开始上开始"
+                    android:textColor="@color/color_787878"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/ll_ok_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/d20"
+            android:paddingTop="@dimen/d15">
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/d35"
+                android:background="@drawable/selecter_btn_red2"
+                android:text="@string/str_msgx"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_heightPercent="12%w"
+                app:layout_textSizePercent="5%w"
+                app:layout_widthPercent="60%w" />
+
+            <TextView
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d16"
+                android:layout_marginRight="@dimen/d16"
+                android:layout_marginTop="@dimen/d16"
+                android:text="@string/str_yhzs"
+                android:textColor="@color/color_787878"
+                android:textSize="11sp" />
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/d20"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="5dip"
+                android:layout_weight="1"
+                android:max="100"
+                android:progressDrawable="@drawable/progressbar_color" />
+
+            <TextView
+                android:id="@+id/tv_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d16"
+                android:gravity="right"
+                android:text="0%"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/s16" />
+
+            <TextView
+                android:id="@+id/tv_install"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d16"
+                android:gravity="right"
+                android:text="@string/str_az"
+                android:textColor="@color/color_E89A06"
+                android:textSize="@dimen/s16"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</layout>

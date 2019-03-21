@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/ll_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@mipmap/ic_add_classify"
+            android:orientation="vertical"
+            app:layout_heightPercent="60%h"
+            app:layout_marginBottomPercent="13%h"
+            app:layout_marginLeftPercent="2%w"
+            app:layout_widthPercent="55%w">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_grap7"
+                android:orientation="horizontal">
+
+                <ListView
+                    android:id="@+id/listView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:divider="@null" />
+
+                <ScrollView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:padding="@dimen/d15">
+
+                    <com.ogmamllpadnew.widget.AutoNextLineLinearlayout
+                        android:id="@+id/ll_right"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="@dimen/d20"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_reset"
+                    android:layout_width="65dp"
+                    android:layout_height="@dimen/d30"
+                    android:layout_marginRight="@dimen/d5"
+                    android:background="@drawable/shape_grap6"
+                    android:text="@string/str_cz2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/d13" />
+
+                <Button
+                    android:id="@+id/btn_ok"
+                    android:layout_width="65dp"
+                    android:layout_height="@dimen/d30"
+                    android:layout_marginRight="@dimen/d5"
+                    android:background="@drawable/shape_red2"
+                    android:text="@string/str_qd2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/d13" />
+            </LinearLayout>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</layout>

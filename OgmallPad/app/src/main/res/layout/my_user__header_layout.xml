@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/status_bar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/color_c73c3a" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_c73c3a"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_heightPercent="8%h">
+
+                <TextView
+                    android:id="@+id/tv_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/btn_left"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:maxLength="7"
+                    android:text="@string/str_wdkh"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/btn_left"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:padding="@dimen/d12"
+                    android:src="@mipmap/ic_arrows_left_white" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="23dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/tv_left"
+                    android:background="@drawable/shape_bg9"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.junshan.pub.widget.ClearEditText
+                        android:id="@+id/et_search"
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"
+                        android:hint="@string/str_ss"
+                        android:imeOptions="actionSearch"
+                        android:maxLines="1"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="13dp" />
+
+                    <ImageView
+                        android:id="@+id/iv_search"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:padding="6dp"
+                        android:src="@mipmap/ic_search" />
+                </LinearLayout>
+            </RelativeLayout>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_parent"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="@dimen/d10"
+            android:background="@mipmap/ic_my_user_bg"
+            android:gravity="center|left"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_head"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="40dp"
+                android:src="@mipmap/ic_defualt_head" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_toRightOf="@+id/iv_head"
+                android:gravity="center|left"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/str_zh"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="@dimen/d8"
+                    android:layout_toRightOf="@+id/iv_head"
+                    android:text="@string/str_ywy"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:background="@color/color_f4f4f4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center|left"
+                android:paddingBottom="@dimen/d6"
+                android:paddingLeft="50dp"
+                android:paddingTop="10dp"
+                android:text="ID"
+                android:textColor="@color/color_333333"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center|left"
+                android:paddingBottom="@dimen/d6"
+                android:paddingLeft="50dp"
+                android:paddingTop="10dp"
+                android:text="@string/str_xm"
+                android:textColor="@color/color_333333"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center|left"
+                android:paddingBottom="@dimen/d6"
+                android:paddingLeft="50dp"
+                android:paddingTop="10dp"
+                android:text="@string/str_sjh"
+                android:textColor="@color/color_333333"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center|left"
+                android:paddingBottom="@dimen/d6"
+                android:paddingLeft="50dp"
+                android:paddingTop="10dp"
+                android:text="@string/str_cz"
+                android:textColor="@color/color_333333"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center|left"
+                android:paddingBottom="@dimen/d6"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/color_c73c3a"
+                android:textSize="14dp"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

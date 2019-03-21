@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/divider"
+            app:layout_heightPercent="5%w">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/d10"
+                android:background="@color/color_dddddd" />
+
+            <TextView
+                android:id="@+id/tv_bh"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_head"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="01"
+                android:textColor="@color/color_333333"
+                app:layout_textSizePercent="30%h" />
+
+            <TextView
+                android:id="@+id/tv_shop_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_head"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="欧工软装"
+                android:textColor="@color/color_333333"
+                app:layout_textSizePercent="30%h" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_head"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="李速爱"
+                android:textColor="@color/color_333333"
+                app:layout_textSizePercent="30%h" />
+
+            <TextView
+                android:id="@+id/tv_mobile"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_head"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="13424234223"
+                android:textColor="@color/color_333333"
+                app:layout_textSizePercent="30%h" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_head"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="广东深圳龙华"
+                android:textColor="@color/color_333333"
+                app:layout_textSizePercent="23%h" />
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:id="@+id/ll_reset"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/iv_head"
+                    android:drawableLeft="@mipmap/ic_reset"
+                    android:drawablePadding="@dimen/d3"
+                    android:gravity="center"
+                    android:text="@string/str_czmm"
+                    android:textColor="@color/color_E70052"
+                    app:layout_textSizePercent="30%h" />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/d10"
+                android:background="@color/color_dddddd" />
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_dddddd" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</layout>

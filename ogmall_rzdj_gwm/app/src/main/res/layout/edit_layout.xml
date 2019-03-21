@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/ll_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/ic_edit_bg"
+            android:orientation="vertical"
+            app:layout_heightPercent="45%h"
+            app:layout_marginLeftPercent="35%w"
+            app:layout_marginTopPercent="18%h"
+            app:layout_widthPercent="40%w">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:background="@drawable/shape_grap7"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_widthPercent="65%w">
+
+                <com.junshan.pub.widget.ClearEditText
+                    android:singleLine="true"
+                    android:maxLength="10"
+                    android:id="@+id/et_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:hint="@string/str_hint3"
+                    android:paddingLeft="@dimen/d15"
+                    android:paddingRight="@dimen/d15"
+                    android:textColor="@color/color_333333"
+                    android:textColorHint="@color/color_999999"
+                    android:textSize="@dimen/d13" />
+
+                <Button
+                    android:id="@+id/btn_add"
+                    android:layout_width="60dp"
+                    android:layout_height="@dimen/d25"
+                    android:layout_marginRight="@dimen/d5"
+                    android:background="@drawable/shape_red2"
+                    android:text="@string/str_qd2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/d13" />
+            </LinearLayout>
+
+            <com.junshan.pub.widget.BaseGridView
+                android:id="@+id/gv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d20"
+                android:horizontalSpacing="@dimen/d10"
+                android:numColumns="4"
+                android:verticalSpacing="@dimen/d12" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_reset"
+                    android:layout_width="65dp"
+                    android:layout_height="@dimen/d30"
+                    android:layout_marginRight="@dimen/d5"
+                    android:background="@drawable/shape_grap6"
+                    android:text="@string/str_cz2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/d13" />
+                <Button
+                    android:id="@+id/btn_ok"
+                    android:layout_width="65dp"
+                    android:layout_height="@dimen/d30"
+                    android:layout_marginRight="@dimen/d5"
+                    android:background="@drawable/shape_red2"
+                    android:text="@string/str_tj2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/d13" />
+            </LinearLayout>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_close"
+            android:layout_alignRight="@id/ll_content"
+            android:layout_alignTop="@id/ll_content"
+            android:layout_marginTop="@dimen/d15"
+            android:layout_marginRight="@dimen/d30"/>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+</layout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_left"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/selector_style"
+                        android:text="@string/str_fg"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/d14" />
+
+                    <CheckBox
+                        android:id="@+id/cb_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="65dp"
+                        android:layout_marginRight="80dp"
+                        android:button="@null"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/selector_style"
+                        android:text="@string/str_jg"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/d14" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/fl_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <android.support.v4.app.FragmentTabHost
+                    android:id="@+id/tabhost"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/color_f0f0f0"
+            android:gravity="center|right"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:layout_marginRight="50dp"
+                android:id="@+id/btn_all"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:background="@drawable/drawable_red"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="@dimen/d10"
+                android:text="@string/str_qx2"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/btn_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/drawable_yellow"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="@dimen/d10"
+                android:text="@string/str_sc"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,89 @@
+apply plugin: 'com.android.application'
+//使用greendao
+apply plugin: 'org.greenrobot.greendao'
+
+def time() {
+    return new Date().format("yyyyMMdd_HH_mm", TimeZone.getDefault())
+}
+
+android {
+    compileSdkVersion 25
+    defaultConfig {
+        applicationId "com.ogmallpad"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 201810151//如201810151表示2018年10月15日版本1
+        versionName "1.2"//
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            android.applicationVariants.all { variant ->
+                variant.outputs.all {
+                    outputFileName = "Ogmallpad_V${defaultConfig.versionName}_${time()}.apk"
+                }
+            }
+        }
+    }
+
+    signingConfigs {
+        config {
+            keyAlias 'ogmallpad'
+            keyPassword 'ogmallpad123'
+            storeFile file('../app/src/main/key/ogmallpad.jks')
+            storePassword 'ogmallpad123'
+        }
+        release {
+            keyAlias 'ogmallpad'
+            keyPassword 'ogmallpad123'
+            storeFile file('../app/src/main/key/ogmallpad.jks')
+            storePassword 'ogmallpad123'
+        }
+        debug {
+            keyAlias 'ogmallpad'
+            keyPassword 'ogmallpad123'
+            storeFile file('../app/src/main/key/ogmallpad.jks')
+            storePassword 'ogmallpad123'
+        }
+    }
+
+    //greendao配置
+    greendao {
+        //版本号，升级时可配置
+        schemaVersion 1
+    }
+
+    //设置databinding
+    dataBinding {
+        enabled = true
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java']
+            jniLibs.srcDir 'libs'
+        }
+    }
+    useLibrary  'org.apache.http.legacy'
+}
+
+dependencies {
+    provided fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile project(':netlibrary')
+    implementation project(':lib-zxing')
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
+    implementation project(':infinitecycleviewpager')
+    //图片缩放
+    compile 'com.github.chrisbanes.photoview:library:1.2.4'
+
+    //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.1.9
+    compile 'com.tencent.bugly:crashreport:2.8.6'
+    //greendao依赖
+    compile 'org.greenrobot:greendao:3.2.0'
+    implementation project(':qdrawlibrary')
+}

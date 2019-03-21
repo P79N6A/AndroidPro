@@ -1,0 +1,89 @@
+{
+  "code": 0,
+  "data": {
+    "comboArea": "10",
+    "comboName": "test1",
+    "detailsImage": [
+      "http://images.ogmall.com/0fc09532-481b-4c50-939a-77a2f7bf6d90",
+      "http://images.ogmall.com/5a035121-e15d-44e0-ae3d-affacbd4383d",
+      "http://images.ogmall.com/0c20fe39-3cb0-47a8-a870-b07cdcc1a8bd"
+    ],
+    "headImage": "http://images.ogmall.com/1f2c67bc-9390-49a6-801a-c7acd0ca5bc6",
+    "introduce": "dasfjadjf;la",
+    "rich": [
+      {
+        "color": "黑檀色",
+        "headImage": "http://images.ogmall.com/fac84fa6-a3cd-4e1e-893e-08b5020521bd",
+        "id": 55711,
+        "number": 2,
+        "productCategory": "床",
+        "productName": "B07 芙森堡家具 法式新古典 2米/1.8米床 俄罗斯桦木/皮 香槟金/珍珠白/香槟银/黑檀色",
+        "productOgCode": "OABA353A0527",
+        "sellPrice": 1.0,
+        "spec": "2400*2550*1830建议床垫尺寸:2000*2200"
+      }
+    ],
+    "room": [
+      {
+        "mainCombo": [
+          {
+            "color": "香槟银",
+            "headImage": "http://images.ogmall.com/6a084990-8702-41f5-b54a-a45bff64b136",
+            "id": 55662,
+            "number": 3,
+            "productCategory": "方几",
+            "productName": "B07 芙森堡家具 法式新古典 方几 俄罗斯桦木,大理石(冰花玉) 香槟金/珍珠白/香槟银/黑檀色",
+            "productOgCode": "OABA353A0352",
+            "sellPrice": 2.0,
+            "spec": "800*800*505(不含大理石)"
+          }
+        ],
+        "roomName": "space1",
+        "viceCombo": [
+          {
+            "color": "香槟金",
+            "headImage": "http://images.ogmall.com/OABA353A042.jpg",
+            "id": 4773,
+            "number": 4,
+            "productCategory": "床",
+            "productName": "B07 芙森堡家具 法式新古典 1.8米/1.5米床 俄罗斯桦木/按图皮板为：829皮 香槟金/珍珠白/香槟银/黑檀色",
+            "productOgCode": "OABA353A042",
+            "sellPrice": 3.0,
+            "spec": "1950*2200*1550建议床垫尺寸:1800*2000"
+          }
+        ]
+      },
+      {
+        "mainCombo": [
+          {
+            "color": "黑檀色",
+            "headImage": "http://images.ogmall.com/OABA353A048 _1.jpg",
+            "id": 55696,
+            "number": 2,
+            "productCategory": "床",
+            "productName": "B07 芙森堡家具 法式新古典 1.8米床 俄罗斯桦木/按图：皮板改皮加钱 香槟金/珍珠白/香槟银/黑檀色",
+            "productOgCode": "OABA353A0487",
+            "sellPrice": 1.0,
+            "spec": "2080*2320*1445建议床垫尺寸:1800*2000"
+          }
+        ],
+        "roomName": "space2",
+        "viceCombo": [
+          {
+            "color": "香槟金",
+            "headImage": "http://images.ogmall.com/9e58cf8d-05b9-4022-9fc8-f789d98254c9",
+            "id": 4780,
+            "number": 5,
+            "productCategory": "床",
+            "productName": "B07 芙森堡家具 法式新古典 1.8米床 俄罗斯桦木/按图：皮板为902皮 香槟金/珍珠白/香槟银/黑檀色",
+            "productOgCode": "OABA353A051",
+            "sellPrice": 4.0,
+            "spec": "1980*2400*1670建议床垫尺寸:1800*2000"
+          }
+        ]
+      }
+    ],
+    "vrurl": "xx.rl.com"
+  },
+  "message": "成功"
+}

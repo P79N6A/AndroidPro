@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/fl_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="33%w" />
+
+        <FrameLayout
+            android:id="@+id/fl_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="67%w" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</layout>

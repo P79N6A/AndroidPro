@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="common">
+        <attr name="layout_widthPercent" format="string"/>
+        <attr name="layout_heightPercent" format="string"/>
+        <attr name="layout_marginPercent" format="string"/>
+        <attr name="layout_marginLeftPercent" format="string"/>
+        <attr name="layout_marginTopPercent" format="string"/>
+        <attr name="layout_marginRightPercent" format="string"/>
+        <attr name="layout_marginBottomPercent" format="string"/>
+        <attr name="layout_marginStartPercent" format="string"/>
+        <attr name="layout_marginEndPercent" format="string"/>
+        <attr name="layout_textSizePercent" format="string"/>
+        <attr name="layout_maxWidthPercent" format="string"/>
+        <attr name="layout_maxHeightPercent" format="string"/>
+        <attr name="layout_minWidthPercent" format="string"/>
+        <attr name="layout_minHeightPercent" format="string"/>
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="dimension" />
+        <attr name="text" format="string" />
+        <attr name="removeLineColor" format="color" />
+        <attr name="removeLineHeight" format="dimension" />
+        <attr name="enablePullUp" format="boolean"/>
+        <attr name="enablePullDown" format="boolean"/>
+        <attr name="pullBackground" format="color|reference"/>
+        <attr name="paintColor" format="color" />
+        <attr name="paintWidth" format="dimension" />
+        <attr name="textLength" format="integer"/>
+        <attr name="imageRes" format="reference" />
+        <attr name="maxImageNum" format="integer" />
+        <attr name="pageNumColumns" format="integer" />
+        <attr name="pageEmojiMax" format="integer" />
+    </declare-styleable>
+    <!-- 百分比布局 -->
+    <declare-styleable name="PercentLayout_Layout">
+        <attr name="layout_widthPercent"/>
+        <attr name="layout_heightPercent"/>
+        <attr name="layout_marginPercent"/>
+        <attr name="layout_marginLeftPercent"/>
+        <attr name="layout_marginTopPercent"/>
+        <attr name="layout_marginRightPercent"/>
+        <attr name="layout_marginBottomPercent"/>
+        <attr name="layout_marginStartPercent"/>
+        <attr name="layout_marginEndPercent"/>
+        <attr name="layout_textSizePercent"/>
+        <attr name="layout_maxWidthPercent"/>
+        <attr name="layout_maxHeightPercent"/>
+        <attr name="layout_minWidthPercent"/>
+        <attr name="layout_minHeightPercent"/>
+    </declare-styleable>
+
+    <!-- 带有删除线的TextView -->
+    <declare-styleable name="RemoveTextView">
+        <attr name="textSize"/>
+        <attr name="textColor"/>
+        <attr name="text"/>
+        <attr name="removeLineColor"/>
+        <attr name="removeLineHeight"/>
+    </declare-styleable>
+
+    <!--通用的上拉加载下拉刷新控件的属性-->
+    <declare-styleable name="SmartRefreshLayout">
+        <attr name="enablePullUp"/>
+        <attr name="enablePullDown"/>
+        <attr name="pullBackground"/>
+    </declare-styleable>
+
+    <!-- Android 画板的属性-->
+    <declare-styleable name="HandWriteView">
+        <attr name="paintColor"/>
+        <attr name="paintWidth"/>
+    </declare-styleable>
+
+    <declare-styleable name="AllTextView">
+        <attr name="textLength"/>
+        <attr name="textSize"/>
+        <attr name="textColor"/>
+    </declare-styleable>
+
+    <declare-styleable name="MenuItem">
+        <attr name="text"/>
+        <attr name="textColor"/>
+        <attr name="textSize"/>
+        <attr name="imageRes"/>
+    </declare-styleable>
+
+    <declare-styleable name="emoji">
+        <attr name="pageNumColumns"/>
+        <attr name="pageEmojiMax" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBox
+        android:singleLine="true"
+        android:id="@+id/cb"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/selecter_red2"
+        android:button="@null"
+        android:gravity="center"
+        android:text="qweq"
+        android:textColor="@color/color_red_black"
+        android:textSize="12dp" />
+</layout>

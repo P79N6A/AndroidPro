@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_heightPercent="4.5%w"
+            app:layout_marginLeftPercent="4%w"
+            app:layout_marginRightPercent="4%w">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_all_check_on"
+                android:drawablePadding="@dimen/d5"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/str_qx2"
+                android:textColor="@color/color_787878"
+                app:layout_textSizePercent="40%h" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_delete_check_on"
+                android:drawablePadding="@dimen/d5"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/str_sc"
+                android:textColor="@color/color_787878"
+                app:layout_marginLeftPercent="3%w"
+                app:layout_marginRightPercent="3%w"
+                app:layout_textSizePercent="40%h" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/shape_grap5"
+                android:gravity="center"
+                android:text="@string/str_gl"
+                android:textColor="@color/color_333333"
+                android:textColorHint="@color/color_999999"
+                app:layout_heightPercent="70%h"
+                app:layout_textSizePercent="30%h"
+                app:layout_widthPercent="10%w" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_f0f0f0"
+            app:layout_marginLeftPercent="4%w"
+            app:layout_marginRightPercent="4%w" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</layout>

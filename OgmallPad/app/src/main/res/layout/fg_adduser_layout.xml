@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/ll_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center|top"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@mipmap/ic_add_user_left"
+            app:layout_heightPercent="65%h"
+            app:layout_marginTopPercent="8%h"
+            app:layout_widthPercent="65%h" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="100dp"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="10dp"
+            app:layout_heightPercent="65%h"
+            app:layout_marginTopPercent="8%h"
+            app:layout_widthPercent="65%h">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/color_c73c3a"
+                    android:gravity="center"
+                    android:text="@string/str_tjkh"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/d17" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/shape_bg9"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/shape_bg10"
+                        android:padding="@dimen/d11"
+                        android:src="@mipmap/ic_user_grap" />
+
+                    <com.junshan.pub.widget.ClearEditText
+                        android:singleLine="true"
+                        android:id="@+id/et_name"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:hint="@string/str_qsrmx"
+                        android:maxLength="10"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/color_333333"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/shape_bg9"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/shape_bg10"
+                        android:padding="@dimen/d11"
+                        android:src="@mipmap/ic_mobile_grap" />
+
+                    <com.junshan.pub.widget.ClearEditText
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:id="@+id/et_mobile"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:hint="@string/str_qsrsjh"
+                        android:maxLength="11"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/color_333333"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@mipmap/ic_check_on_red"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="@string/str_yhxy"
+                    android:textColor="@color/color_666666"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/btn_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/shape_bg11"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/str_tj"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</layout>

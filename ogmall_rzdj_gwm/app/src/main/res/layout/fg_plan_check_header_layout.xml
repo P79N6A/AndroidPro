@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="4dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="@dimen/d15"
+            android:background="@color/color_333333" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="@dimen/d10"
+            android:layout_toRightOf="@+id/view"
+            android:background="@drawable/shape_grap2"
+            android:drawablePadding="@dimen/d10"
+            android:drawableRight="@mipmap/ic_arrows_bottom_small"
+            android:gravity="center"
+            android:paddingLeft="@dimen/d20"
+            android:paddingRight="@dimen/d20"
+            android:text="@string/str_qb"
+            android:textColor="@color/color_787878"
+            android:textSize="@dimen/d13" />
+
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/tv_status"
+            android:background="@drawable/shape_grap4"
+            android:paddingLeft="@dimen/d10"
+            android:paddingRight="@dimen/d10"
+            app:layout_heightPercent="4%w">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_head"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/str_bh"
+                android:textColor="@color/color_787878"
+                app:layout_textSizePercent="40%h" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_head"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/str_sjs"
+                android:textColor="@color/color_787878"
+                app:layout_textSizePercent="40%h" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_head"
+                android:layout_weight="4"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/str_bt"
+                android:textColor="@color/color_787878"
+                app:layout_textSizePercent="40%h" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_head"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/str_hx2"
+                android:textColor="@color/color_787878"
+                app:layout_textSizePercent="40%h" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_head"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/str_fg"
+                android:textColor="@color/color_787878"
+                app:layout_textSizePercent="40%h" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_head"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/str_mj3"
+                android:textColor="@color/color_787878"
+                app:layout_textSizePercent="40%h" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_head"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/str_cjsj"
+                android:textColor="@color/color_787878"
+                app:layout_textSizePercent="40%h" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_head"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/str_shzt"
+                android:textColor="@color/color_787878"
+                app:layout_textSizePercent="40%h" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+</layout>

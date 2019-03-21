@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.zhy.android.percent.support.PercentLinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:scaleType="centerCrop"
+                app:layout_heightPercent="100%w" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d5"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="实木居家靠椅"
+                android:textColor="@color/color_333333"
+                app:layout_marginTopPercent="3%w"
+                app:layout_textSizePercent="7%w" />
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d5"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="椅子 凳子"
+                android:textColor="@color/color_333333"
+                app:layout_textSizePercent="5%w" />
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_heightPercent="9%w"
+                app:layout_marginTopPercent="3%w">
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="￥234.55"
+                    android:textColor="@color/color_333333"
+                    android:textStyle="bold"
+                    app:layout_textSizePercent="90%h" />
+
+                <TextView
+                    android:id="@+id/tv_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/ic_share"
+                    app:layout_widthPercent="100%h" />
+
+                <CheckBox
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:id="@+id/cb_collect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/d15"
+                    android:background="@drawable/selecter_collect"
+                    android:button="@null"
+                    app:layout_marginRightPercent="30%h"
+                    app:layout_widthPercent="100%h" />
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </LinearLayout>
+</layout>

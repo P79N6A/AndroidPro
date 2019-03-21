@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingLeft="50dp"
+                android:gravity="center|left"
+                android:paddingBottom="@dimen/d10"
+                android:paddingTop="10dp"
+                android:text="开口道库"
+                android:textColor="@color/color_666666"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingLeft="50dp"
+                android:gravity="center|left"
+                android:paddingBottom="@dimen/d10"
+                android:paddingTop="10dp"
+                android:text="哈市和"
+                android:textColor="@color/color_666666"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/tv_mobile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:paddingLeft="50dp"
+                android:gravity="center|left"
+                android:paddingBottom="@dimen/d10"
+                android:paddingTop="10dp"
+                android:text="1362678229"
+                android:textColor="@color/color_666666"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/tv_lywj"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:paddingLeft="50dp"
+                android:gravity="center|left"
+                android:paddingBottom="@dimen/d10"
+                android:paddingTop="10dp"
+                android:text="@string/str_lywj"
+                android:textColor="@color/color_c73c3a"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/tv_add"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:paddingLeft="30dp"
+                android:gravity="center|left"
+                android:paddingBottom="@dimen/d10"
+                android:paddingTop="10dp"
+                android:text="@string/str_jxtj"
+                android:textColor="@color/color_c73c3a"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/color_f0f0f0" />
+    </LinearLayout>
+</layout>

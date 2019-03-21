@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:id="@+id/ll_search"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginLeft="-120dp"
+                android:layout_marginTop="100dp"
+                android:orientation="horizontal">
+
+                <com.junshan.pub.widget.ClearEditText
+                    android:id="@+id/et_search"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_grap_search"
+                    android:hint="@string/str_ppm"
+                    android:imeOptions="actionSearch"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="@dimen/d10"
+                    android:singleLine="true"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/d12" />
+
+                <ImageView
+                    android:id="@+id/iv_search"
+                    android:layout_width="38dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_grap_search2"
+                    android:padding="7dp"
+                    android:visibility="gone"
+                    android:src="@mipmap/ic_search_red" />
+
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout
+            android:id="@+id/ll_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
+                                android:text="@string/str_fl2"
+                                android:visibility="invisible"
+                                android:textColor="@color/color_c73c3a"
+                                android:textSize="14dp" />
+
+                            <View
+                                android:layout_width="3dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@color/black" />
+
+                            <LinearLayout
+                                android:id="@+id/ll_top"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center|left"
+                                android:paddingLeft="@dimen/d15"
+                                android:orientation="horizontal" />
+
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="#F8F8F8"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:text="@string/str_fl2"
+                            android:textColor="@color/black"
+                            android:textSize="13dp" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="16dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:visibility="gone"
+                            android:background="@color/white" />
+
+                        <com.junshan.pub.widget.PagerSlidingTabStrip
+                            android:id="@+id/tabs"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/transparent"
+                            app:JessonTextColorOff="#787878"
+                            app:JessonTextColorOn="@color/colorRed"
+                            app:pstsDividerColor="@color/transparent"
+                            app:pstsIndicatorColor="@color/colorRed"
+                            app:pstsIndicatorHeight="@dimen/d1"
+                            app:pstsShouldExpand="true"
+                            app:pstsTabPaddingLeftRight="@dimen/d8"
+                            app:pstsUnderlineHeight="@dimen/d1" />
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:background="@color/white" />
+        </LinearLayout>
+    </FrameLayout>
+</layout>

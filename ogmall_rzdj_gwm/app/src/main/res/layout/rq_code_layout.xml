@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_heightPercent="100%w" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/str_qsmfx"
+                    android:textColor="@color/color_999999"
+                    android:textSize="13dp" />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/str_fx"
+                    android:textColor="@color/color_333333"
+                    android:textSize="16dp" />
+
+                <com.junshan.pub.widget.ClearEditText
+                    android:id="@+id/et_plan_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/shape_grap_15"
+                    android:hint="@string/str_qsrfamc"
+                    android:paddingLeft="@dimen/d20"
+                    android:paddingRight="@dimen/d20"
+                    android:singleLine="true"
+                    android:textColor="@color/color_666666"
+                    android:textSize="12dp" />
+
+                <com.junshan.pub.widget.ClearEditText
+                    android:id="@+id/et_plan_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_grap_15"
+                    android:hint="@string/str_qsrxymj"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/d20"
+                    android:paddingRight="@dimen/d20"
+                    android:singleLine="true"
+                    android:textColor="@color/color_666666"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/btn_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/shape_bg11"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/str_qd2"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+        </FrameLayout>
+    </android.support.v7.widget.CardView>
+</layout>

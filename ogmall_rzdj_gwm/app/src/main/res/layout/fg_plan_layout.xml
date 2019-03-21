@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginRight="@dimen/d10"
+        android:orientation="vertical">
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="55%w"
+            app:layout_widthPercent="94%w" >
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_design" />
+            <TextView
+                android:id="@+id/tv_dsh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="待审核"
+                android:visibility="gone"
+                android:textSize="50sp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:background="#99000000"/>
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="@dimen/d10"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="双十一套餐 现代风格 卡萨（极简）系列"
+            android:textColor="@color/color_333333"
+            app:layout_textSizePercent="4.5%w"
+            app:layout_widthPercent="88%w" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</layout>

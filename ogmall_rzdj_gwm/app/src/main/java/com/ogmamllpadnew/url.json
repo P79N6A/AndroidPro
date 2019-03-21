@@ -1,0 +1,11 @@
+{
+  "pakege": "com.shan.netlibrary",
+  "author": "陈俊山",
+  "data": [
+    {
+      "type": "post",
+      "name": "根据三级分类查出对应的一级，二级，三级分类",
+      "url": "app/goods/selectCategoryByCategory3Id"
+    }
+  ]
+}

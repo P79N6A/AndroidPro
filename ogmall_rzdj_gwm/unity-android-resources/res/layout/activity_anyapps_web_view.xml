@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/toolbarLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/web_cutsom_title_v2"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/web_custom_back_image"
+            android:layout_width="53dp"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/web_cutsom_next_v2" />
+
+        <ImageButton
+            android:id="@+id/web_custom_close_image"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_close_v2"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/web_custom_url"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.35"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/webUrlTest"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#faf8f8" />
+
+        <ImageButton
+            android:id="@+id/web_custom_more_btn"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/web_cutsom_more_v2"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/CustomWebView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" />
+
+</LinearLayout>

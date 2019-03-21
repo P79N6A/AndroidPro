@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:id="@+id/cb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:gravity="center|left"
+            android:text="北欧风格"
+            android:textColor="@color/black"
+            app:layout_paddingLeftPercent="30%w"
+            app:layout_textSizePercent="40%h"
+            android:background="@drawable/selecter_bg3"/>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</layout>

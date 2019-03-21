@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:paddingLeft="107dp"
+            android:paddingRight="107dp"
+            android:paddingTop="23dp">
+
+            <TextView
+                android:id="@+id/tv_hint1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/str_fabt"
+                android:textColor="@color/color_787878"
+                android:textSize="14sp" />
+
+            <com.junshan.pub.widget.ClearEditText
+                android:id="@+id/et_plan_title"
+                android:layout_width="515dp"
+                android:layout_height="34dp"
+                android:layout_toRightOf="@+id/tv_hint1"
+                android:background="@drawable/shape_grap2"
+                android:hint="请输入方案标题"
+                android:maxLength="50"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textColor="@color/color_333333"
+                android:textColorHint="@color/color_787878"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_hint2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_hint1"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="45dp"
+                android:text="@string/str_fmzp"
+                android:textColor="@color/color_787878"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_fmzp"
+                android:layout_width="188dp"
+                android:layout_height="113dp"
+                android:layout_below="@+id/tv_hint1"
+                android:layout_marginLeft="@dimen/d10"
+                android:layout_marginTop="45dp"
+                android:layout_toRightOf="@+id/tv_hint2"
+                android:background="@mipmap/ic_upload_image"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tv_hint3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_fmzp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="8dp"
+                android:text="图片大小必须在375×255px以上，大小不能超过1M"
+                android:textColor="@color/color_787878"
+                android:textSize="8dp" />
+
+            <TextView
+                android:id="@+id/tv_hint4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_hint3"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="19dp"
+                android:text="@string/str_xqzp"
+                android:textColor="@color/color_787878"
+                android:textSize="14sp" />
+
+            <com.junshan.pub.widget.BaseGridView
+                android:id="@+id/gv_xqzp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_hint3"
+                android:layout_marginRight="@dimen/d50"
+                android:layout_marginTop="19dp"
+                android:layout_toRightOf="@+id/tv_hint4"
+                android:numColumns="3"
+                android:verticalSpacing="@dimen/d30" />
+
+            <TextView
+                android:id="@+id/tv_hint5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gv_xqzp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="52dp"
+                android:text="@string/str_hxxz"
+                android:textColor="@color/color_787878"
+                android:textSize="14sp" />
+
+            <FrameLayout
+                android:layout_width="266dp"
+                android:layout_height="34dp"
+                android:layout_below="@+id/gv_xqzp"
+                android:layout_marginTop="45dp"
+                android:layout_toRightOf="@+id/tv_hint5"
+                android:background="@drawable/shape_grap2">
+
+                <TextView
+                    android:id="@+id/tv_select_hx"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:hint="@string/str_qxzhx"
+                    android:paddingLeft="15dp"
+                    android:textColor="@color/color_333333"
+                    android:textColorHint="@color/color_787878"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="17dp"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="@dimen/d10"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_arrows_red" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_hint6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_hint5"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="48dp"
+                android:text="@string/str_fgxz"
+                android:textColor="@color/color_787878"
+                android:textSize="14sp" />
+
+            <FrameLayout
+                android:layout_width="266dp"
+                android:layout_height="34dp"
+                android:layout_below="@+id/tv_hint5"
+                android:layout_marginTop="40dp"
+                android:layout_toRightOf="@+id/tv_hint5"
+                android:background="@drawable/shape_grap2">
+
+                <TextView
+                    android:id="@+id/tv_slelect_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:hint="@string/str_qxzfg"
+                    android:paddingLeft="15dp"
+                    android:textColor="@color/color_333333"
+                    android:textColorHint="@color/color_787878"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="17dp"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="@dimen/d10"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_arrows_red" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_hint7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_hint6"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="48dp"
+                android:text="@string/str_hxlx"
+                android:textColor="@color/color_787878"
+                android:textSize="14sp" />
+
+            <com.junshan.pub.widget.ClearEditText
+                android:id="@+id/et_hx_type"
+                android:layout_width="266dp"
+                android:layout_height="34dp"
+                android:layout_below="@+id/tv_hint6"
+                android:layout_marginTop="40dp"
+                android:layout_toRightOf="@+id/tv_hint1"
+                android:background="@drawable/shape_grap2"
+                android:hint="@string/str_qsrhxlx"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textColor="@color/color_333333"
+                android:textColorHint="@color/color_787878"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_hint8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_hint7"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="48dp"
+                android:text="@string/str_mj2"
+                android:textColor="@color/color_787878"
+                android:textSize="14sp" />
+
+            <com.junshan.pub.widget.ClearEditText
+                android:id="@+id/et_area"
+                android:layout_width="266dp"
+                android:layout_height="34dp"
+                android:layout_below="@+id/tv_hint7"
+                android:layout_marginTop="40dp"
+                android:layout_toRightOf="@+id/tv_hint1"
+                android:background="@drawable/shape_grap2"
+                android:hint="请输入面积"
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textColor="@color/color_333333"
+                android:textColorHint="@color/color_787878"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_hint9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_hint8"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="48dp"
+                android:text="@string/str_vrurl"
+                android:textColor="@color/color_787878"
+                android:textSize="14sp" />
+
+            <com.junshan.pub.widget.ClearEditText
+                android:id="@+id/et_url"
+                android:layout_width="266dp"
+                android:layout_height="34dp"
+                android:layout_below="@+id/tv_hint8"
+                android:layout_marginTop="40dp"
+                android:layout_toRightOf="@+id/tv_hint1"
+                android:background="@drawable/shape_grap2"
+                android:hint="请输入VRURL"
+                android:maxLength="30"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textColor="@color/color_333333"
+                android:textColorHint="@color/color_787878"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_url"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="66dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="103dp"
+                    android:layout_height="37dp"
+                    android:background="@drawable/selecter_btn_grap"
+                    android:text="@string/str_qx"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <Button
+                    android:id="@+id/btn_ok"
+                    android:layout_width="103dp"
+                    android:layout_height="37dp"
+                    android:layout_marginLeft="45dp"
+                    android:background="@drawable/selecter_btn_red"
+                    android:text="@string/str_bc"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</layout>

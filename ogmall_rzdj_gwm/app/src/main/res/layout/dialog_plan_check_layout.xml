@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_heightPercent="8%h">
+
+            <TextView
+                android:id="@+id/hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_faxq"
+                android:textColor="@color/color_787878"
+                app:layout_marginBottomPercent="3%h"
+                app:layout_marginLeftPercent="5%w"
+                app:layout_marginTopPercent="3%h"
+                app:layout_textSizePercent="40%h" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_close"
+                android:scaleType="center"
+                app:layout_marginRightPercent="3%w"
+                app:layout_widthPercent="80%h" />
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/hint"
+            android:background="@color/color_f0f0f0" />
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_head"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/d20"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_design"
+                app:layout_heightPercent="60%h"
+                app:layout_widthPercent="90%h" />
+
+            <HorizontalScrollView
+                android:id="@+id/hs"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_below="@+id/iv_head"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="9dp"
+                android:scrollbars="none"
+                app:layout_heightPercent="13%h"
+                app:layout_widthPercent="90%h">
+
+                <LinearLayout
+                    android:id="@+id/ll_piture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" />
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hs"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal"
+                app:layout_widthPercent="90%h">
+
+                <TextView
+                    android:id="@+id/tv_hx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="户型：四室一厅"
+                    android:textColor="@color/color_333333"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设计时间：2018/07/12"
+                    android:textColor="@color/color_333333"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tv_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="面积：280"
+                    android:textColor="@color/color_333333"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_designer_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:text="设计师姓名：李审核"
+                android:textColor="@color/color_333333"
+                android:textSize="12sp"
+                app:layout_widthPercent="90%h" />
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/d20"
+            android:gravity="center"
+            app:layout_heightPercent="10%h">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/shape_grap3"
+                android:text="@string/str_shbtg"
+                android:textColor="@color/white"
+                app:layout_heightPercent="60%h"
+                app:layout_textSizePercent="25%h"
+                app:layout_widthPercent="17%w" />
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/shape_red2"
+                android:text="@string/str_shtg"
+                android:textColor="@color/white"
+                app:layout_heightPercent="60%h"
+                app:layout_marginLeftPercent="5%w"
+                app:layout_textSizePercent="25%h"
+                app:layout_widthPercent="17%w" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</layout>

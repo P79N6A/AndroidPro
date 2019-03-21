@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:clickable="false"
+            android:focusable="false"
+            android:id="@+id/cb"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:background="@drawable/selecter_red3"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center|left"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/d11"
+            android:paddingRight="@dimen/d11"
+            android:text="計算機世界"
+            android:textColor="@color/color_red_black"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/view_arr"
+            android:layout_width="5dp"
+            android:layout_height="10dp"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="@dimen/d11"
+            android:background="@mipmap/ic_arr_red" />
+    </FrameLayout>
+</layout>

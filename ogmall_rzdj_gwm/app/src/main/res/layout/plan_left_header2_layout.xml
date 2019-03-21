@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="right|center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="239dp"
+            android:layout_height="34dp"
+            android:layout_marginRight="@dimen/d36"
+            android:background="@drawable/shape_grap"
+            android:focusableInTouchMode="true"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="@dimen/d13"
+                android:src="@mipmap/ic_search" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="@dimen/d12"
+                android:layout_marginRight="@dimen/d12"
+                android:background="@color/color_eeeeee" />
+
+            <com.junshan.pub.widget.ClearEditText
+                android:id="@+id/et_search"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:hint="@string/str_qsrfamc"
+                android:maxLength="15"
+                android:paddingRight="@dimen/d12"
+                android:singleLine="true"
+                android:textColor="@color/color_333333"
+                android:textColorHint="@color/color_999999"
+                android:textSize="@dimen/d14" />
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

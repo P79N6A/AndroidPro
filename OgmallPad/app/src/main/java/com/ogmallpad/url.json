@@ -1,0 +1,11 @@
+{
+  "pakege": "com.shan.netlibrary",
+  "author": "chenjunshan",
+  "data": [
+    {
+      "type": "get",
+      "name": "商品详情",
+      "url": "pad/products/details"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/ll_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_gravity="right"
+            android:id="@+id/ll_content"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="160dp"
+            android:layout_marginTop="160dp"
+            android:background="@mipmap/ic_hx_bg"
+            android:orientation="vertical">
+
+            <com.junshan.pub.widget.BaseListView
+                android:dividerHeight="@dimen/d12"
+                android:divider="#00000000"
+                android:id="@+id/lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:lineSpacingExtra="@dimen/d12" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

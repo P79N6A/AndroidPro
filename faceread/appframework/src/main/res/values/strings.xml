@@ -1,0 +1,17 @@
+<!-- 建议使用value_作为前缀-->
+<resources>
+    <string name="app_name">App</string>
+
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+
+    <string name="srl_keep_pull_up">继续向上拉</string>
+    <string name="srl_keep_pull_down">继续向下拉</string>
+    <string name="srl_release_to_refresh">松开刷新</string>
+    <string name="app_add_first">再按一次退出程序</string>
+
+    <string name="toast_permission_denied">权限已被禁止，请前往设置解锁</string>
+    <string name="framework_text_dialog_confirm">确认</string>
+    <string name="framework_text_dialog_cancel">取消</string>
+</resources>

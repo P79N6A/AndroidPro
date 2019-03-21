@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBox
+        android:clickable="false"
+        android:focusable="false"
+        android:id="@+id/rb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/brand_selector"
+        android:button="@null"
+        android:checked="true"
+        android:gravity="center"
+        android:paddingBottom="@dimen/d5"
+        android:paddingLeft="@dimen/d15"
+        android:paddingRight="@dimen/d15"
+        android:paddingTop="@dimen/d5"
+        android:text="客厅家具"
+        android:textColor="@color/color_black_white"
+        android:textSize="14sp" />
+</layout>

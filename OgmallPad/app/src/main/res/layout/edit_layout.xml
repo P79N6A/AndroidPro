@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:id="@+id/ll_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="450dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="85dp">
+
+            <LinearLayout
+                android:id="@+id/ll_child"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_edit_bg"
+                android:orientation="vertical"
+                android:paddingBottom="25dp"
+                android:paddingLeft="@dimen/d50"
+                android:paddingRight="30dp"
+                android:paddingTop="25dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.junshan.pub.widget.ClearEditText
+                            android:id="@+id/et_content"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/shape_bg20"
+                            android:ellipsize="end"
+                            android:gravity="center|left"
+                            android:hint="@string/str_qsrfjbj"
+                            android:maxLength="10"
+                            android:maxLines="1"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/color_666666"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/tv_add"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/shape_bg19"
+                            android:gravity="center"
+                            android:text="@string/str_qd2"
+                            android:textColor="@color/white"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/tv_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15dp"
+                            android:drawableLeft="@mipmap/ic_hint"
+                            android:drawablePadding="3dp"
+                            android:gravity="center"
+                            android:text="@string/str_hint8"
+                            android:textColor="@color/color_c73c3a"
+                            android:textSize="11dp"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                    <com.junshan.pub.widget.BaseGridView
+                        android:id="@+id/gv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d15"
+                        android:horizontalSpacing="@dimen/d15"
+                        android:numColumns="5"
+                        android:verticalSpacing="@dimen/d15" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/btn_reset"
+                        android:layout_width="65dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/shape_bg21"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:text="@string/str_cz2"
+                        android:textColor="@color/white"
+                        android:textSize="11dp" />
+
+                    <Button
+                        android:id="@+id/btn_ok"
+                        android:layout_width="65dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/shape_bg22"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:layout_marginLeft="@dimen/d10"
+                        android:text="提交"
+                        android:textColor="@color/white"
+                        android:textSize="11dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_delete"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#30000000"
+                android:gravity="center"
+                android:visibility="visible">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="30dp"
+                        android:paddingLeft="50dp"
+                        android:paddingRight="50dp"
+                        android:paddingTop="30dp">
+
+                        <TextView
+                            android:id="@+id/tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/str_hint14"
+                            android:textColor="@color/color_666666"
+                            android:textSize="12dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btn_cancel"
+                                android:layout_width="65dp"
+                                android:layout_height="25dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/shape_bg21"
+                                android:gravity="center"
+                                android:paddingLeft="5dp"
+                                android:text="@string/str_qx"
+                                android:textColor="@color/white"
+                                android:textSize="11dp" />
+
+                            <Button
+                                android:id="@+id/btn_yes"
+                                android:layout_width="65dp"
+                                android:layout_height="25dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/shape_bg22"
+                                android:gravity="center"
+                                android:layout_marginLeft="@dimen/d10"
+                                android:paddingRight="5dp"
+                                android:text="@string/str_qr"
+                                android:textColor="@color/white"
+                                android:textSize="11dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

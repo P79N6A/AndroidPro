@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_heightPercent="6%w">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btn_add_product"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_toRightOf="@+id/iv_head"
+                android:background="@drawable/shape_red3"
+                android:gravity="center"
+                android:text="@string/str_xzgg"
+                android:textColor="@color/color_E70052"
+                app:layout_heightPercent="60%h"
+                app:layout_paddingLeftPercent="2%w"
+                app:layout_paddingRightPercent="2%w"
+                app:layout_textSizePercent="25%h" />
+
+            <TextView
+                android:id="@+id/tv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/d23"
+                android:layout_toRightOf="@+id/iv_head"
+                android:background="@drawable/shape_grap2"
+                android:gravity="center"
+                android:text="@string/str_plsc"
+                android:textColor="@color/color_787878"
+                app:layout_heightPercent="60%h"
+                app:layout_paddingLeftPercent="2%w"
+                app:layout_paddingRightPercent="2%w"
+                app:layout_textSizePercent="25%h" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/shape_grap4"
+            android:paddingLeft="@dimen/d10"
+            android:paddingRight="@dimen/d10"
+            app:layout_heightPercent="4%w">
+
+            <CheckBox
+                android:id="@+id/cb_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d5"
+                android:layout_marginRight="@dimen/d5" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_head"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/str_bh"
+                android:textColor="@color/color_787878"
+                app:layout_textSizePercent="35%h" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_head"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="@string/str_ggmc"
+                android:textColor="@color/color_787878"
+                app:layout_textSizePercent="35%h" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_head"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/str_ggt"
+                android:textColor="@color/color_787878"
+                app:layout_textSizePercent="35%h" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_head"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/str_gg2"
+                android:textColor="@color/color_787878"
+                app:layout_textSizePercent="35%h" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_head"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/str_ys2"
+                android:textColor="@color/color_787878"
+                app:layout_textSizePercent="35%h" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_head"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/str_yj"
+                android:textColor="@color/color_787878"
+                app:layout_textSizePercent="35%h" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_head"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/str_xsj"
+                android:textColor="@color/color_787878"
+                app:layout_textSizePercent="35%h" />
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_head"
+                android:gravity="center"
+                android:text="@string/str_cz"
+                android:textColor="@color/color_787878"
+                android:visibility="visible"
+                app:layout_textSizePercent="35%h" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</layout>

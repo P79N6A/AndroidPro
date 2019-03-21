@@ -1,0 +1,1 @@
+include ':app', ':publiclibrary', ':xrecyclerview', ':netlibrary', ':infinitecycleviewpager', ':qdrawlibrary', ':unity-android-resources', ':lib-zxing'

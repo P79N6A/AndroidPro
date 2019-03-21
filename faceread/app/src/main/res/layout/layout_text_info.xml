@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.ogmall.faceread.widget.TextClockView
+        android:id="@+id/tv_content"
+        android:layout_width="408dp"
+        android:layout_height="131dp"
+        android:textColor="#BDECFD"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:lineSpacingExtra="10dp"
+        android:layout_alignLeft="@id/iv_logo"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="237dp"
+        android:background="@mipmap/icon_text_splsh"/>
+
+</RelativeLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/divider"
+            app:layout_heightPercent="9%w">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/d10"
+                android:background="@color/color_dddddd" />
+
+            <CheckBox
+                android:id="@+id/cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d5"
+                android:layout_marginRight="@dimen/d5" />
+
+            <TextView
+                android:id="@+id/tv_bh"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="01"
+                android:textColor="@color/color_333333"
+                app:layout_textSizePercent="1.3%w" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="3"
+                android:paddingLeft="@dimen/d5"
+                android:paddingRight="@dimen/d5"
+                android:text="张三张三三张三三张三三张三张三三张三三张三三张三三张三三张三三张三三三张三三张三三张三三三"
+                android:textColor="@color/color_E70052"
+                app:layout_textSizePercent="1.3%w" />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_design"
+                app:layout_heightPercent="6%w" />
+
+            <TextView
+                android:id="@+id/tv_spec"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:paddingLeft="@dimen/d5"
+                android:paddingRight="@dimen/d5"
+                android:text="广东深圳广东深圳龙华龙华"
+                android:textColor="@color/color_333333"
+                app:layout_textSizePercent="1.3%w" />
+
+            <TextView
+                android:paddingLeft="@dimen/d5"
+                android:paddingRight="@dimen/d5"
+                android:id="@+id/tv_color"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_head"
+                android:layout_weight="2"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="4"
+                android:text="李横李横竖李横竖李横竖李横竖李横竖李横竖李横竖李横竖李横竖李横竖李横竖李横竖竖"
+                android:textColor="@color/color_333333"
+                app:layout_textSizePercent="1.3%w" />
+
+            <TextView
+                android:id="@+id/tv_old_price"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_head"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="2018-08-12"
+                android:textColor="@color/color_333333"
+                app:layout_textSizePercent="1.3%w" />
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_head"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="2018-08-12"
+                android:textColor="@color/color_333333"
+                app:layout_textSizePercent="1.3%w" />
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_bj"
+                    android:textColor="@color/color_E70052"
+                    app:layout_textSizePercent="8%w" />
+
+                <TextView
+                    android:id="@+id/tv_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_edit"
+                    android:text="@string/str_sc"
+                    android:textColor="@color/color_E70052"
+                    android:layout_marginLeft="@dimen/d30"
+                    app:layout_textSizePercent="8%w" />
+
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/d10"
+                android:background="@color/color_dddddd" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_dddddd" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</layout>

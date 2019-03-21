@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="30dp"
+    android:layout_marginBottom="@dimen/d10"
+    android:background="@drawable/selecter_red"
+    android:button="@null"
+    android:checked="true"
+    android:clickable="false"
+    android:focusable="false"
+    android:gravity="center"
+    android:text="审核未通过"
+    android:textColor="@color/color_red_black"
+    android:textSize="@dimen/d12">
+
+</RadioButton>

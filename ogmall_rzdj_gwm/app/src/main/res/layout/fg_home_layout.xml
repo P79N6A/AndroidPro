@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/fl_home_head01"
+            android:name="com.ogmamllpadnew.ui.fragment.Home1Fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <fragment
+            android:id="@+id/fl_home_head02"
+            android:name="com.ogmamllpadnew.ui.fragment.Home2Fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_marginTopPercent="4%w" />
+
+        <fragment
+            android:id="@+id/fl_home_head03"
+            android:name="com.ogmamllpadnew.ui.fragment.Home3Fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_marginTopPercent="4%w" />
+
+        <fragment
+            android:id="@+id/fl_home_head04"
+            android:name="com.ogmamllpadnew.ui.fragment.Home4Fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_marginBottomPercent="3%w"
+            app:layout_marginTopPercent="4%w" />
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</layout>

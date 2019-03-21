@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_grap4"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_head"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_design"
+            app:layout_heightPercent="8%w"
+            app:layout_marginBottomPercent="3%h"
+            app:layout_marginLeftPercent="7%w"
+            app:layout_marginRightPercent="1.5%w"
+            app:layout_marginTopPercent="3%h"
+            app:layout_widthPercent="8%w" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_head"
+            android:text="还是第四代"
+            android:textColor="@color/color_333333"
+            app:layout_marginTopPercent="4%h"
+            app:layout_textSizePercent="3.3%h" />
+
+        <TextView
+            android:id="@+id/tv_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_toRightOf="@+id/iv_head"
+            android:text="18827276367"
+            android:textColor="@color/color_333333"
+            app:layout_marginTopPercent="1%h"
+            app:layout_textSizePercent="3.3%h" />
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_mobile"
+            android:layout_toRightOf="@+id/iv_head"
+            android:text="市级代理用户"
+            android:textColor="@color/color_787878"
+            app:layout_textSizePercent="2.5%h" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/iv_head"
+            android:background="@color/color_dddddd" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/divider"
+            android:paddingLeft="@dimen/d10"
+            android:paddingRight="@dimen/d10"
+            app:layout_heightPercent="4%w">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_head"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/str_bh"
+                android:textColor="@color/color_787878"
+                app:layout_textSizePercent="40%h" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_head"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/str_xm"
+                android:textColor="@color/color_787878"
+                app:layout_textSizePercent="40%h" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_head"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="@string/str_sjh"
+                android:textColor="@color/color_787878"
+                app:layout_textSizePercent="40%h" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_head"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="@string/str_dz"
+                android:textColor="@color/color_787878"
+                app:layout_textSizePercent="40%h" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_head"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/str_tjr"
+                android:textColor="@color/color_787878"
+                app:layout_textSizePercent="40%h" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_head"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="@string/str_khbz"
+                android:textColor="@color/color_787878"
+                app:layout_textSizePercent="40%h" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_head"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="@string/str_cz"
+                android:textColor="@color/color_787878"
+                android:visibility="visible"
+                app:layout_textSizePercent="40%h" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/iv_head"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/str_wj"
+                android:textColor="@color/color_787878"
+                android:visibility="visible"
+                app:layout_textSizePercent="40%h" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+</layout>
